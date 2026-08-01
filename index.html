@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<meta name="theme-color" content="#ADD3FF">
+<title>Minute Cryptic</title>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<main class="app" role="main">
+
+  <!-- ── header ───────────────────────────────────────────────────────── -->
+  <header class="header">
+    <button class="icon-btn back" type="button" aria-label="back">
+      <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+        <path d="M20 12H4M4 12l7-7M4 12l7 7" fill="none" stroke="currentColor"
+              stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <div class="header-title">
+      <p class="header-date" id="date"></p>
+      <p class="header-byline" id="byline"></p>
+    </div>
+
+    <div class="header-right">
+      <button class="icon-btn" type="button" aria-label="information" data-open="info">
+        <svg viewBox="0 0 24 24" width="27" height="27" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M12 10.6v6" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/>
+          <circle cx="12" cy="7.3" r="1.25" fill="currentColor"/>
+        </svg>
+      </button>
+      <button class="icon-btn logo-btn" type="button" aria-label="minute cryptic home">
+        <svg width="30" height="30" viewBox="0 0 68 60" fill="none" aria-hidden="true">
+          <path d="M7.54688 8.17149C7.54688 5.75546 9.54543 3.79688 12.0108 3.79688H59.6256C62.091 3.79688 64.0895 5.75546 64.0895 8.17149V54.834C64.0895 57.2501 62.091 59.2087 59.6256 59.2087H12.0108C9.54543 59.2087 7.54688 57.2501 7.54688 54.834V8.17149Z" fill="#ffffff"/>
+          <path d="M3.67188 4.37461C3.67188 1.95858 5.67043 0 8.13577 0H55.7506C58.216 0 60.2145 1.95858 60.2145 4.37461V51.0372C60.2145 53.4532 58.216 55.4118 55.7506 55.4118H8.13577C5.67043 55.4118 3.67188 53.4532 3.67188 51.0372V4.37461Z" fill="#000000"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M55.7506 4.08297H8.13577C7.97141 4.08297 7.83818 4.21355 7.83818 4.37461V51.0372C7.83818 51.1982 7.97141 51.3288 8.13577 51.3288H55.7506C55.915 51.3288 56.0482 51.1982 56.0482 51.0372V4.37461C56.0482 4.21355 55.915 4.08297 55.7506 4.08297ZM8.13577 0C5.67043 0 3.67188 1.95858 3.67188 4.37461V51.0372C3.67188 53.4532 5.67043 55.4118 8.13577 55.4118H55.7506C58.216 55.4118 60.2145 53.4532 60.2145 51.0372V4.37461C60.2145 1.95858 58.216 0 55.7506 0H8.13577Z" fill="black"/>
+          <path d="M56.741 43.4827C51.3683 44.5062 48.2762 42.9727 47.4649 38.8823C47.111 37.0982 46.9706 34.4154 47.0436 30.8339C47.1524 27.2005 47.2019 24.6621 47.1921 23.2189C47.1836 19.9239 47.0802 17.7759 46.8817 16.7751C46.4415 14.5558 45.3777 13.6069 43.6904 13.9283C42.5803 14.1398 41.6435 15.1085 40.8799 16.8346C40.1077 18.5171 39.7751 20.9061 39.8823 24.0017L39.831 43.2586L27.102 47.0237L27.1772 30.6895C27.1884 28.6552 27.1515 26.4945 27.0666 24.2076C26.9816 21.9207 26.9046 20.6032 26.8356 20.255C26.4385 18.2534 25.4852 17.3963 23.9755 17.6839C22.9542 17.8784 22.0352 18.8212 21.2186 20.5122C20.402 22.2031 19.985 24.6308 19.9675 27.7953L19.9828 49.1301L7.12064 52.935L7.25241 17.0084L17.85 13.6349L18.0254 20.4431C18.7138 17.8733 20.0244 15.885 21.9572 14.4782C23.8814 13.0278 26.5086 11.9855 29.8388 11.3511C31.7482 10.9874 33.4151 11.144 34.8396 11.821C36.2642 12.4979 37.323 13.5381 38.0161 14.9415C38.4688 13.2747 39.5636 11.8243 41.3003 10.5903C43.0728 9.30428 45.1357 8.43714 47.489 7.98884C49.8868 7.53208 51.7147 7.45483 52.9728 7.75709C54.2666 8.00738 55.3507 8.47825 56.2252 9.1697C57.7261 10.4643 58.7528 12.5041 59.3052 15.2891C59.849 18.0305 60.0867 22.3657 60.0185 28.2945C59.9493 31.1979 60.0182 33.1718 60.2254 34.2161C60.4239 35.217 60.8722 35.967 61.5702 36.4663C62.3127 36.9571 63.1366 37.1614 64.042 37.0793C63.8914 38.6433 63.1253 40.0086 61.7439 41.1749C60.4068 42.3328 58.7392 43.1021 56.741 43.4827Z" fill="#ffffff"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ── clue ─────────────────────────────────────────────────────────── -->
+  <section class="clue-wrap">
+    <div class="clue-card"><p class="clue" id="clue"></p></div>
+  </section>
+
+  <!-- ── answer grid ──────────────────────────────────────────────────── -->
+  <section class="grid-wrap">
+    <div class="grid" id="grid" role="group" aria-label="answer"></div>
+    <input id="hidden-input" class="hidden-input" autocomplete="off"
+           autocorrect="off" autocapitalize="characters" spellcheck="false"
+           aria-label="type your answer">
+  </section>
+
+  <!-- ── hint dots / par ──────────────────────────────────────────────── -->
+  <section class="dots-wrap">
+    <div class="dots" id="dots" aria-label="hints used"></div>
+  </section>
+
+  <!-- ── actions ──────────────────────────────────────────────────────── -->
+  <section class="actions">
+    <button class="round-btn" type="button" aria-label="how to play" data-open="guide">
+      <svg viewBox="6 6 60 50" width="26" height="24" aria-hidden="true">
+        <path d="M56.741 43.4827C51.3683 44.5062 48.2762 42.9727 47.4649 38.8823C47.111 37.0982 46.9706 34.4154 47.0436 30.8339C47.1524 27.2005 47.2019 24.6621 47.1921 23.2189C47.1836 19.9239 47.0802 17.7759 46.8817 16.7751C46.4415 14.5558 45.3777 13.6069 43.6904 13.9283C42.5803 14.1398 41.6435 15.1085 40.8799 16.8346C40.1077 18.5171 39.7751 20.9061 39.8823 24.0017L39.831 43.2586L27.102 47.0237L27.1772 30.6895C27.1884 28.6552 27.1515 26.4945 27.0666 24.2076C26.9816 21.9207 26.9046 20.6032 26.8356 20.255C26.4385 18.2534 25.4852 17.3963 23.9755 17.6839C22.9542 17.8784 22.0352 18.8212 21.2186 20.5122C20.402 22.2031 19.985 24.6308 19.9675 27.7953L19.9828 49.1301L7.12064 52.935L7.25241 17.0084L17.85 13.6349L18.0254 20.4431C18.7138 17.8733 20.0244 15.885 21.9572 14.4782C23.8814 13.0278 26.5086 11.9855 29.8388 11.3511C31.7482 10.9874 33.4151 11.144 34.8396 11.821C36.2642 12.4979 37.323 13.5381 38.0161 14.9415C38.4688 13.2747 39.5636 11.8243 41.3003 10.5903C43.0728 9.30428 45.1357 8.43714 47.489 7.98884C49.8868 7.53208 51.7147 7.45483 52.9728 7.75709C54.2666 8.00738 55.3507 8.47825 56.2252 9.1697C57.7261 10.4643 58.7528 12.5041 59.3052 15.2891C59.849 18.0305 60.0867 22.3657 60.0185 28.2945C59.9493 31.1979 60.0182 33.1718 60.2254 34.2161C60.4239 35.217 60.8722 35.967 61.5702 36.4663C62.3127 36.9571 63.1366 37.1614 64.042 37.0793C63.8914 38.6433 63.1253 40.0086 61.7439 41.1749C60.4068 42.3328 58.7392 43.1021 56.741 43.4827Z" fill="currentColor"/>
+      </svg>
+    </button>
+    <button class="pill hints-btn" type="button" data-open="hints">hints</button>
+    <button class="pill check-btn" type="button" id="check" disabled>check</button>
+  </section>
+
+  <p class="result" id="result" role="status" aria-live="polite"></p>
+</main>
+
+<!-- ── on-screen keyboard ─────────────────────────────────────────────── -->
+<div class="keyboard" id="keyboard" aria-label="keyboard"></div>
+
+<!-- ── sheet (hints / info / guide) ───────────────────────────────────── -->
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" hidden>
+  <div class="sheet-head">
+    <button class="icon-btn sheet-back" type="button" aria-label="back" id="sheet-back">
+      <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+        <path d="M20 12H4M4 12l7-7M4 12l7 7" fill="none" stroke="currentColor"
+              stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <button class="icon-btn sheet-close" type="button" aria-label="close" id="sheet-close">
+      <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+        <path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor"
+              stroke-width="2.6" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+  <div class="sheet-body" id="sheet-body"></div>
+</div>
+
+<script src="puzzle.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
