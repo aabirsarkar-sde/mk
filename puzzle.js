@@ -31,8 +31,7 @@ window.PUZZLE = {
       text:
         "Our definition here is 'your partner'. Every cryptic clue hides a " +
         'straight definition at one end or the other, and this one sits right ' +
-        "at the tail. Ten letters for someone you're romantically attached to, " +
-        'a plain everyday word rather than anything exotic.',
+        'at the tail.',
     },
     {
       id: 'indicator',
