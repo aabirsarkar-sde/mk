@@ -304,15 +304,6 @@
     if (!state.revealed[hint.id]) {
       state.revealed[hint.id] = true;
       if (hint.reveals) state.revealedTypes[hint.reveals] = true;
-      if (hint.isAnswer) {
-        state.revealedTypes.fodder = true;
-        state.revealedTypes.indicator = true;
-        state.revealedTypes.definition = true;
-        state.letters = LETTERS.slice();
-        state.solved = true;
-        resultEl.textContent = 'revealed';
-        paintGrid();
-      }
       syncHighlights();
       renderDots();
       save();

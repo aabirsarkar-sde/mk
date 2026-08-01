@@ -41,8 +41,8 @@ Spacing and type sizes were measured off the reference screenshots (screenshot p
 ## Playing
 
 Type with the on-screen or physical keyboard; arrows move, backspace deletes, Enter
-checks. Hints reveal the definition, the indicators, then the fodder — each one
-highlights its span in the clue in the matching colour and burns a dot. Par is the
+checks. The three hints are definition, indicator and fodder; each one highlights its
+span in the clue in the matching colour and burns a dot. Par is the
 number of hints the clue is expected to take; scoring is golf-style, so fewer is
 better. Progress is kept in `localStorage`.
 

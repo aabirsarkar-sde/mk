@@ -26,43 +26,32 @@ window.PUZZLE = {
   hints: [
     {
       id: 'definition',
-      label: 'the definition',
+      label: 'definition',
       reveals: 'definition',
       text:
         "Our definition here is 'your partner'. Every cryptic clue hides a " +
-        "straight definition at one end or the other, and this one sits right " +
-        "at the tail. Ten letters for someone you're romantically attached to — " +
-        'a plain, everyday word rather than anything exotic.',
+        'straight definition at one end or the other, and this one sits right ' +
+        "at the tail. Ten letters for someone you're romantically attached to, " +
+        'a plain everyday word rather than anything exotic.',
     },
     {
-      id: 'indicators',
-      label: 'the indicators',
+      id: 'indicator',
+      label: 'indicator',
       reveals: 'indicator',
       text:
         "This clue's indicator is 'wild'. It's an anagram indicator, guiding us " +
         'to take the letters of a neighbouring word or phrase and rearrange ' +
         "them into a new order. 'ends up as' is just a linkword joining the " +
-        'wordplay to the definition — it does no work of its own.',
+        'wordplay to the definition, and it does no work of its own.',
     },
     {
       id: 'fodder',
-      label: 'the fodder',
+      label: 'fodder',
       reveals: 'fodder',
       text:
-        "This clue's fodder is 'girl finder'. We'll use these letters — all ten " +
-        'of them, which is a neat match for our enumeration — to construct the ' +
+        "This clue's fodder is 'girl finder'. We'll use these letters, all ten " +
+        'of them, which is a neat match for our enumeration, to construct the ' +
         "answer, jumbled up as the clue's indicator demands.",
-    },
-    {
-      id: 'answer',
-      label: 'reveal the answer',
-      reveals: null,
-      isAnswer: true,
-      text:
-        "The answer is GIRLFRIEND. 'Wild' tells us to anagram GIRL FINDER, and " +
-        'those ten letters shuffle straight into GIRLFRIEND — which ' +
-        "'ends up as' 'your partner'. A lovely &-lit-ish surface: the girl you " +
-        'went looking for is the one you end up with.',
     },
   ],
 };
